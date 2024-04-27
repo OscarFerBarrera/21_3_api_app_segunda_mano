@@ -1,0 +1,38 @@
+{
+  "name": "21_3_api_app_segunda_mano",
+  "version": "1.0.0",
+  "description": "api de venta de articulos de segunda mano",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky",
+    "start": "node --watch index.js",
+    "seed:users": "node ./seeds/user.seed.js",
+    "seed:products": "node ./seeds/product.seed.js",
+    "lint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OscarFerBarrera/21_3_api_app_segunda_mano.git"
+  },
+  "author": "Oscar Barrera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OscarFerBarrera/21_3_api_app_segunda_mano/issues"
+  },
+  "homepage": "https://github.com/OscarFerBarrera/21_3_api_app_segunda_mano#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "eslint": "^8.57.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "husky": "^9.0.11"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.2"
+  }
+}
