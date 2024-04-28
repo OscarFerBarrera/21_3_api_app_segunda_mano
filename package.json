@@ -9,6 +9,7 @@
     "start": "node --watch index.js",
     "seed:users": "node ./seeds/user.seed.js",
     "seed:products": "node ./seeds/product.seed.js",
+    "seed:all": "npm run seed:users && npm run seed:products",
     "lint": "eslint"
   },
   "repository": {

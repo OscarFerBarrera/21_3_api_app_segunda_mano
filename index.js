@@ -1,4 +1,6 @@
 const express = require("express");
+const { userRouter  } = require("./routes/user.routes.js");
+const { productRouter  } = require("./routes/product.routes.js");
 
 const main = async () => {
   
@@ -19,7 +21,8 @@ const main = async () => {
   router.get("*", (req, res) => {
     res.status(404).send("Lo sentimos :( No hemos encontrado la página solicitada.");
   });
-
+  app.use("/user", userRouter);
+  app.use("/product", productRouter);
   app.use("/", router);
 
   app.listen(PORT, () =>{
